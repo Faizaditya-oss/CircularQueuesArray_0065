@@ -73,6 +73,7 @@ class Queues
                FRONT = FRONT + 1;
             
         }
+      }
 
         void display()
         {
@@ -106,8 +107,10 @@ class Queues
                     cout << queue_array[FRONT_position] << " ";
                     FRONT_position++;
                 }
+                
 
                 FRONT_position = 0;
+
 
                 // Literasi dari awal array hingga ke REAR
                 while (FRONT_position <= REAR_position)
@@ -121,7 +124,7 @@ class Queues
         }
         
     }
-};
+
 
 int main()
     {
@@ -159,8 +162,22 @@ int main()
                     q.display();
                     break;
                 }
+                case '4':
+                {
+                    return 0;
+                }
+                default :
+                {
+                    cout << "Invalid  option!" << endl;
+                    break;
+                }
             }
-        }
+            catch (exception &e)
+            {
+                cout << "Check for the values entered." << endl;
+            }
+        
       }
     }
+};
 
