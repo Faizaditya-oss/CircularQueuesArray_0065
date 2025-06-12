@@ -73,6 +73,7 @@ class Queues
                FRONT = FRONT + 1;
             
         }
+        
         void display()
         {
             int FRONT_position = FRONT;
@@ -87,7 +88,15 @@ class Queues
 
             cout << "\nElements in the queue are...\n";
 
-            // 
+            //  Jika FRONT_position <= REAR_position, literasi dari FRONT hingga REAR
+            if (FRONT == -1)
+            {
+                while (FRONT_position <= REAR_position)
+                {
+                    cout << queue_array[FRONT_position] << "  ";
+                    FRONT_position++;
+                }
+            }
 
         }
         
