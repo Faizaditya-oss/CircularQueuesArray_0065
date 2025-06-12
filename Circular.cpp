@@ -25,7 +25,7 @@ class Queues
         // 1. Cek apakah antrian penuh
         if ((FRONT == 0 && REAR == max - 1) || (FRONT == REAR + 1))
         {
-            cout << "\nQueue overflow\n" // 1.a
+            cout << "\nQueue overflow\n"; // 1.a
             return;                      // 1.b
         }
 
@@ -72,6 +72,23 @@ class Queues
             else  
                FRONT = FRONT + 1;
             
+        }
+        void display()
+        {
+            int FRONT_position = FRONT;
+            int REAR_position = REAR;
+
+            // Cek apakah antrian kosong
+            if (FRONT == -1)
+            {
+                cout << "Queue is empty\n";
+                return;
+            }
+
+            cout << "\nElements in the queue are...\n";
+
+            // 
+
         }
         
       }
