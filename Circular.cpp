@@ -16,7 +16,7 @@
  * 1. en queue
  * 2. de queue
  * 3. display
- * 4. exitt
+ * 4. exit
  * 
  * @author Profile
  * -nama : Faiz Aditya 
